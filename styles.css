@@ -1,6 +1,6 @@
 
 /* Whah Consulting - styles.css */
-/* Color palette: Navy #1F3B73, Steel Gray #4D4D4D, White #FFFFFF, Light Blue #A4C6F2 */
+/* 2 services per row layout */
 :root{
   --navy:#1F3B73;
   --steel:#4D4D4D;
@@ -8,40 +8,22 @@
   --light:#A4C6F2;
   --bg:#FAFBFE;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  color:var(--steel);
-  background:var(--bg);
-  line-height:1.6;
-}
+body{margin:0; font-family:Lato, sans-serif; color:var(--steel); background:var(--bg); line-height:1.6}
 img{max-width:100%; display:block}
 a{color:var(--navy); text-decoration:none}
 a:hover{text-decoration:underline}
 
 .container{width:min(1100px, 92%); margin-inline:auto}
 
-header{
-  background:var(--white);
-  border-bottom:1px solid #e7eaf3;
-  position:sticky; top:0; z-index:40;
-}
+header{background:var(--white); border-bottom:1px solid #e7eaf3; position:sticky; top:0; z-index:40}
 .navbar{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-.brand{display:flex; align-items:center; gap:12px}
-.brand img{height:64px; width:auto} /* larger logo */
+.brand img{height:64px; width:auto}
 nav ul{display:flex; gap:26px; list-style:none; margin:0; padding:0}
 nav a{font-weight:600; color:#1c2b4b}
 nav a:hover{color:var(--navy)}
 
-.hero{
-  background:linear-gradient(90deg, rgba(31,59,115,0.06), rgba(31,59,115,0.0));
-  padding:48px 0 24px;
-}
-.hero-grid{
-  display:grid; grid-template-columns: 1.2fr 0.8fr; gap:28px; align-items:center;
-}
+.hero{background:linear-gradient(90deg, rgba(31,59,115,0.06), rgba(31,59,115,0.0)); padding:48px 0 24px}
+.hero-grid{display:grid; grid-template-columns: 1.2fr 0.8fr; gap:28px; align-items:center}
 h1,h2,h3{font-family:'Montserrat', sans-serif; color:#15305c; margin:0 0 12px}
 h1{font-size: clamp(1.8rem, 3.2vw + 1rem, 3rem); line-height:1.15}
 .tagline{font-size:1.1rem; margin-bottom:22px}
@@ -54,7 +36,7 @@ h1{font-size: clamp(1.8rem, 3.2vw + 1rem, 3rem); line-height:1.15}
 .kpi b{color:var(--navy); font-size:1.1rem}
 
 .section{padding:56px 0}
-.card-row{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:22px; margin-top:18px}
+.card-row{display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:18px}
 .card{background:var(--white); border:1px solid #e7eaf3; border-radius:14px; padding:22px}
 .card h3{margin-top:6px}
 .badge{display:inline-block; background:#eef4ff; color:var(--navy); padding:6px 10px; border-radius:999px; font-size:0.75rem; font-weight:700; letter-spacing:.3px}
@@ -64,13 +46,9 @@ h1{font-size: clamp(1.8rem, 3.2vw + 1rem, 3rem); line-height:1.15}
 .values{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
 .values .badge{background:#f4f6fb}
 
-.contact{
-  background:var(--white); border:1px solid #e7eaf3; border-radius:14px; padding:24px;
-}
+.contact{background:var(--white); border:1px solid #e7eaf3; border-radius:14px; padding:24px}
 form{display:grid; gap:14px; margin-top:6px}
-input, textarea{
-  width:100%; padding:12px 12px; border:1px solid #ced5e3; border-radius:10px; font-size:1rem;
-}
+input, textarea{width:100%; padding:12px; border:1px solid #ced5e3; border-radius:10px; font-size:1rem}
 button{all:unset; display:inline-block; background:var(--navy); color:var(--white); padding:12px 18px; border-radius:10px; font-weight:700; cursor:pointer}
 button:hover{background:#1a335f}
 
@@ -81,5 +59,6 @@ small{opacity:.95}
 @media (max-width: 900px){
   .hero-grid{grid-template-columns:1fr}
   .about{grid-template-columns:1fr}
+  .card-row{grid-template-columns:1fr}
   .brand img{height:56px}
 }
