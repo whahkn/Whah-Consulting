@@ -105,15 +105,3 @@ footer a{color:#DDE8FF}
   color: #1F3B73;
   font-weight: bold;
 }
-/* Prevent ugly single-word wraps in hero */
-h1, .tagline {
-  text-wrap: balance; /* modern browsers */
-}
-
-/* Safety: narrower text width on desktop so lines break naturally */
-.hero-grid section h1 {
-  max-width: 680px;
-}
-.hero-grid section .tagline {
-  max-width: 720px;
-}
