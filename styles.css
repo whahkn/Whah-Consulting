@@ -86,3 +86,22 @@ footer a{color:#DDE8FF}
   .hero-grid, .about, .band-grid{grid-template-columns:1fr}
   .card-row{grid-template-columns:1fr}
 }
+
+.bio-section h2 {
+  border-bottom: 2px solid #e7eaf3;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+.bio-list {
+  list-style: none;
+  padding-left: 0;
+}
+.bio-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.bio-list li::before {
+  content: "• ";
+  color: #1F3B73;
+  font-weight: bold;
+}
