@@ -1,1 +1,143 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Whah Consulting</title></head><body><h1>Whah Consulting</h1><p>Assets prepared. Please upload alongside your existing HTML/CSS.</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whah Consulting | Strategy & Leadership</title>
+  <meta name="description" content="Guiding growth with strategy and heart. Strategy deployment, cost leadership, systems thinking, and culture through communication." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+
+</head>
+<body>
+  <header aria-label="Site header">
+    <div class="container navbar">
+      <div class="brand"><img src="assets/logo.png" alt="Whah Consulting logo" /></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="bio.html">About</a></li>
+          <li><a href="love-works.html">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <section>
+        <h1>Guiding Growth with Strategy and Heart</h1>
+        <p class="tagline">Partnering with leaders to design and deploy long-term strategies, reduce costs, and strengthen culture — with deep expertise in cold chain and experience across industries.</p>
+        <a class="cta" href="#contact">Work With Ken</a>
+        <div class="kpis" aria-label="Highlights">
+          <div class="kpi"><b>30 Years</b><br/>Leadership across logistics, sales, product, innovation</div>
+          <div class="kpi"><b>Prior President / CEO</b><br/>CORE X Partners &amp; Hanson Logistics</div>
+          <div class="kpi"><b>Chairman</b><br/>Global Cold Chain Foundation</div>
+        </div>
+      </section>
+      <aside aria-label="Ken headshot">
+        <img class="headshot" src="assets/ken_headshot.jpg" alt="Ken Whah headshot" />
+      </aside>
+    </div>
+  </main>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>How I Help</h2>
+      <div class="card-row">
+        <article class="card">
+          <span class="badge">Growth</span>
+          <h3>Growth Strategy &amp; Innovation</h3>
+          <p>Identify expansion and innovation opportunities — acquisitions, new builds, new services, and breakthrough ideas. Facilitate workshops and develop board-ready business cases with execution roadmaps that guide long-term growth.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Culture</span>
+          <h3>Culture – Communication &amp; Leadership Development (Love Works)</h3>
+          <p>Transform communication from a “soft” skill into the essential leadership skill. Help leaders and teams become clear communicators and active listeners, strengthening culture and developing leadership capacity.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Execution</span>
+          <h3>Strategy Deployment</h3>
+          <p>Develop strategies that don’t just sit on paper — they get executed. Facilitate disciplined annual planning cycles and high-impact offsites that align priorities, and drive accountability so the strategy is deployed effectively across the organization.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Brand &amp; CX</span>
+          <h3>Mission · Vision · Values · Customer Promise</h3>
+          <p>Refine mission, vision, values, purpose, and your dominant selling idea. Design the customer experience to consistently deliver on your promise.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Efficiency</span>
+          <h3>Cost Leadership</h3>
+          <p>Assess and propose investments that reduce operating costs in key areas like labor, back-office efficiency, energy, and insurance. Build sustainable cost advantages, especially during economic downturns.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Systems</span>
+          <h3>Systems Thinking</h3>
+          <p>Implement a management operating system with effective meeting cadences, leader standard work, metrics that matter, and processes that work together seamlessly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container band-grid">
+      <div>
+        <h2>Speaking, Teaching &amp; Advising</h2>
+        <p>Across industries—and rooted in the cold chain. Explore <em>Love Works</em> for practical tools that make communication a hard skill, not a soft one.</p>
+        <a class="cta" href="love-works.html">Explore Love Works Resources</a>
+      </div>
+      <div>
+        <img class="headshot" src="assets/ken_action_placeholder.jpg" alt="Ken speaking at a conference" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about">
+      <img class="headshot" src="assets/ken_headshot.jpg" alt="Ken Whah" />
+      <div>
+        <h2>About Ken</h2>
+        <p>Ken Whah has served as President, CEO, and Board Chairman, bringing hands-on experience in strategy, operations, and culture. He leads with honesty, transparency, and relationships—helping leaders cut through noise, focus on what matters, and move faster with confidence.</p>
+        <p><b>Board experience:</b> Ken has served as Board Chairman and in advisory roles, and is actively seeking additional board opportunities where his expertise in strategy, operations, and culture can create long-term impact.</p>
+        <p><a class="cta" href="bio.html">Read Full Bio</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact">
+        <h2>Let’s Talk About Your Business</h2>
+        <p>Email me directly at <a href="mailto:whahkn@gmail.com">whahkn@gmail.com</a> or send a message below.</p>
+        <form onsubmit="return handleSubmit(event)">
+          <label> Name <input type="text" name="name" required></label>
+          <label> Email <input type="email" name="email" required></label>
+          <label> Message <textarea name="message" rows="5" required></textarea></label>
+          <div><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><small>© 2025 Whah Consulting · All rights reserved.</small></div></footer>
+
+  <script>
+  function handleSubmit(e){e.preventDefault();
+    var f=e.target;
+    var name=encodeURIComponent(f.name.value.trim());
+    var email=encodeURIComponent(f.email.value.trim());
+    var msg=encodeURIComponent(f.message.value.trim());
+    var sub = 'Website inquiry from ' + name;
+    var body = 'Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0A%0D%0A' + msg;
+    window.location.href='mailto:whahkn@gmail.com?subject=' + sub + '&body=' + body;
+    f.reset(); return false;}
+  </script>
+</body>
+</html>
