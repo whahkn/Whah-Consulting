@@ -110,3 +110,13 @@ footer a{color:#DDE8FF}
   text-wrap: balance;   /* supported in most modern browsers */
   max-width: 720px;     /* keeps lines from stretching too wide */
 }
+.references {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.4;
+}
+.references a {
+  color: #1F3B73;
+  text-decoration: underline;
+}
