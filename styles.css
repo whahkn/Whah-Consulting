@@ -1,4 +1,5 @@
-/* Whah Consulting - v9 */
+
+/* Whah Consulting - v10 (logo visibility + spacing tweaks) */
 :root{
   --navy:#1F3B73;
   --steel:#4D4D4D;
@@ -13,7 +14,7 @@ body{
   font-family:'Lato', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color:var(--steel);
   background:var(--bg);
-  line-height:1.6;
+  line-height:1.7;
 }
 h1,h2,h3{font-family:'Montserrat', sans-serif; color:#15305c; margin:0 0 12px}
 a{color:var(--navy); text-decoration:none}
@@ -28,11 +29,12 @@ header{
   position:sticky; top:0; z-index:40;
 }
 .navbar{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-.brand img{height:auto; max-height:48px}
-@media (max-width:900px){ .brand img{max-height:44px} }
-@media (max-width:600px){ .brand img{max-height:40px} }
+.navbar .brand{flex:0 0 auto;}
+.brand img{height:auto; max-height:56px;}
+@media (max-width:900px){ .brand img{max-height:52px} }
+@media (max-width:680px){ .brand img{max-height:50px} }
 
-nav ul{display:flex; gap:24px; list-style:none; margin:0; padding:0}
+nav ul{display:flex; gap:24px; list-style:none; margin:0; padding:0; flex-wrap:wrap; row-gap:8px}
 nav a{font-weight:600; color:#1c2b4b}
 nav a:hover{color:var(--navy)}
 
@@ -43,8 +45,9 @@ nav a:hover{color:var(--navy)}
 .hero-grid{
   display:grid; grid-template-columns: 1.2fr 0.8fr; gap:28px; align-items:center;
 }
+.hero-grid section{max-width:680px}
 .tagline{font-size:1.1rem; margin-bottom:22px}
-.cta{display:inline-block; background:var(--navy); color:var(--white); padding:12px 18px; border-radius:8px; font-weight:700}
+.cta{display:inline-block; background:var(--navy); color:var(--white); padding:12px 18px; border-radius:8px; font-weight:700; margin-top:6px}
 .cta:hover{background:#1a335f; text-decoration:none}
 
 .kpis{display:flex; gap:20px; flex-wrap:wrap; margin-top:20px}
@@ -54,14 +57,15 @@ nav a:hover{color:var(--navy)}
 .section{padding:56px 0}
 .card-row{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:18px}
 .card{background:var(--white); border:1px solid var(--border); border-radius:14px; padding:22px; box-shadow:0 6px 18px rgba(0,0,0,.04)}
-.card h3{margin-top:6px}
-.badge{display:inline-block; background:#eef4ff; color:#1f3b73; padding:6px 10px; border-radius:999px; font-size:0.75rem; font-weight:700; letter-spacing:.3px}
+.card h3{margin-top:10px}
+.badge{display:inline-block; background:#eef4ff; color:#1f3b73; padding:6px 10px; border-radius:999px; font-size:0.75rem; font-weight:700; letter-spacing:.3px; margin-bottom:6px}
 
 .band{
   background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
   padding:40px 0;
 }
 .band-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center}
+.band-grid img.headshot{width:100%; max-width:640px; margin:0 auto}
 
 .about{display:grid; grid-template-columns: 0.9fr 1.1fr; gap:28px; align-items:center}
 .headshot{border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.06)}
@@ -75,7 +79,9 @@ button:hover{background:#1a335f}
 footer{margin-top:40px; background:var(--navy); color:#fff; padding:18px 0; font-size:.95rem}
 footer a{color:#DDE8FF}
 
-@media (max-width:1000px){ .card-row{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:1000px){
+  .card-row{grid-template-columns:repeat(2,1fr)}
+}
 @media (max-width:680px){
   .hero-grid, .about, .band-grid{grid-template-columns:1fr}
   .card-row{grid-template-columns:1fr}
