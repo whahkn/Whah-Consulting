@@ -121,13 +121,11 @@ footer a{color:#DDE8FF}
   text-decoration: underline;
 }
 .hero-photo {
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   display: block;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   object-fit: cover;
+  max-height: 500px;
 }
 
 #about .container {
