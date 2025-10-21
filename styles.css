@@ -139,3 +139,13 @@ footer a{color:#DDE8FF}
   max-width: 800px;
   margin: 0 auto;
 }
+.resource-photo {
+  display: block;
+  width: 100%;
+  max-width: 960px;   /* adjust if you want it narrower */
+  height: auto;
+  margin: 1rem auto 1.25rem;  /* centers in the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.18);
+  object-fit: cover;
+}
