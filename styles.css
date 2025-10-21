@@ -142,7 +142,7 @@ footer a{color:#DDE8FF}
 .resource-photo {
   display: block;
   width: 100%;
-  max-width: 960px;   /* adjust if you want it narrower */
+  max-width: 480px;   /* adjust if you want it narrower */
   height: auto;
   margin: 1rem auto 1.25rem;  /* centers in the container */
   border-radius: 8px;
